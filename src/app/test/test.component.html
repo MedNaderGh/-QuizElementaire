@@ -1,0 +1,197 @@
+<div id="end" class="flex-center flex-column">
+    <div class="end-form-container" >
+        <div style=font-size:x-large;color:white;font-weight:900><countdown [config]="{leftTime: 300, format: 'm:s'}"></countdown></div>
+        <mat-tab-group  #tabGroup >
+            <mat-tab class=mytab label=" 1"> 
+            <h2 id="question">{{data[0].question}}</h2>
+            <div class="choice-container" (click)="next('question1',data[0].choice1);tabGroup.selectedIndex=1">
+                <p class="choice-prefix">أ</p>
+                <p class="choice-text" data-number="1">{{data[0].choice1}}</p>
+            </div>
+            <div class="choice-container" (click)="next('question1',data[0].choice2);tabGroup.selectedIndex=1">
+                <p class="choice-prefix">ب</p>
+                <p class="choice-text" data-number="2">{{data[0].choice2}}</p>
+            </div>
+            <div class="choice-container" (click)="next('question1',data[0].choice3);tabGroup.selectedIndex=1">
+                <p class="choice-prefix">ج</p>
+                <p class="choice-text" data-number="3">{{data[0].choice3}}</p>
+            </div>
+            <div class="choice-container" (click)="next('question1',data[0].choice4);tabGroup.selectedIndex=1">
+                <p class="choice-prefix">د</p>
+                <p class="choice-text" data-number="4">{{data[0].choice4}}</p>
+            </div>
+            </mat-tab>
+            <mat-tab class=mytab label=" 2"> 
+                <h2 id="question">{{data[1].question}}</h2>
+            <div class="choice-container" (click)="next('question2',data[1].choice1);tabGroup.selectedIndex=2">
+                <p class="choice-prefix">أ</p>
+                <p class="choice-text" data-number="1">{{data[1].choice1}}</p>
+            </div>
+            <div class="choice-container" (click)="next('question2',data[1].choice2);tabGroup.selectedIndex=2">
+                <p class="choice-prefix">ب</p>
+                <p class="choice-text" data-number="2">{{data[1].choice2}}</p>
+            </div>
+            <div class="choice-container" (click)="next('question2',data[1].choice3);tabGroup.selectedIndex=2"> 
+                <p class="choice-prefix">ج</p>
+                <p class="choice-text" data-number="3">{{data[1].choice3}}</p>
+            </div>
+            <div class="choice-container" (click)="next('question2',data[1].choice4);tabGroup.selectedIndex=2">
+                <p class="choice-prefix">د</p>
+                <p class="choice-text" data-number="4">{{data[1].choice4}}</p>
+            </div>   
+            </mat-tab>
+            <mat-tab class=mytab label=" 3" >
+                <h2 id="question">{{data[2].question}}</h2>
+            <div class="choice-container" (click)="next('question3',data[2].choice1);tabGroup.selectedIndex=3">
+                <p class="choice-prefix">أ</p>
+                <p class="choice-text" data-number="1">{{data[2].choice1}}</p>
+            </div>
+            <div class="choice-container" (click)="next('question3',data[2].choice2);tabGroup.selectedIndex=3">
+                <p class="choice-prefix">ب</p>
+                <p class="choice-text" data-number="2">{{data[2].choice2}}</p>
+            </div>
+            <div class="choice-container" (click)="next('question3',data[2].choice3);tabGroup.selectedIndex=3">
+                <p class="choice-prefix">ج</p>
+                <p class="choice-text" data-number="3">{{data[2].choice3}}</p>
+            </div>
+            <div class="choice-container" (click)="next('question3',data[2].choice4);tabGroup.selectedIndex=3">
+                <p class="choice-prefix">د</p>
+                <p class="choice-text" data-number="4">{{data[2].choice4}}</p>
+            </div>   
+            </mat-tab>
+            <mat-tab class=mytab label=" 4" >
+                <h2 id="question">{{data[3].question}}</h2>
+                <div class="choice-container" (click)="next('question4',data[3].choice1);tabGroup.selectedIndex=4">
+                    <p class="choice-prefix">أ</p>
+                    <p class="choice-text" data-number="1">{{data[3].choice1}}</p>
+                </div>
+                <div class="choice-container" (click)="next('question4',data[3].choice2);tabGroup.selectedIndex=4">
+                    <p class="choice-prefix">ب</p>
+                    <p class="choice-text" data-number="2">{{data[3].choice2}}</p>
+                </div>
+                <div class="choice-container" (click)="next('question4',data[3].choice3);tabGroup.selectedIndex=4">
+                    <p class="choice-prefix">ج</p>
+                    <p class="choice-text" data-number="3">{{data[3].choice3}}</p>
+                </div>
+                <div class="choice-container" (click)="next('question4',data[3].choice4);tabGroup.selectedIndex=4">
+                    <p class="choice-prefix">د</p>
+                    <p class="choice-text" data-number="4">{{data[3].choice4}}</p>
+                </div>
+            </mat-tab>
+            <mat-tab class=mytab label=" 5">
+                <h2 id="question">{{data[4].question}}</h2>
+                <div class="choice-container" (click)="next('question5',data[4].choice1);tabGroup.selectedIndex=5">
+                    <p class="choice-prefix" >أ</p>
+                    <p class="choice-text" data-number="1">{{data[4].choice1}}</p>
+                </div>
+                <div class="choice-container" (click)="next('question5',data[4].choice2);tabGroup.selectedIndex=5">
+                    <p class="choice-prefix">ب</p>
+                    <p class="choice-text" data-number="2">{{data[4].choice2}}</p>
+                </div>
+                <div class="choice-container" (click)="next('question5',data[4].choice3);tabGroup.selectedIndex=5"> 
+                    <p class="choice-prefix">ج</p>
+                    <p class="choice-text" data-number="3">{{data[4].choice3}}</p>
+                </div>
+                <div class="choice-container" (click)="next('question5',data[4].choice4);tabGroup.selectedIndex=5">
+                    <p class="choice-prefix">د</p>
+                    <p class="choice-text" data-number="4">{{data[4].choice4}}</p>
+                </div>
+            </mat-tab>
+            <mat-tab class=mytab label=" 6"> 
+                <h2 id="question">{{data[5].question}}</h2>
+                <div class="choice-container" (click)="next('question6',data[5].choice1);tabGroup.selectedIndex=6">
+                    <p class="choice-prefix">أ</p>
+                    <p class="choice-text" data-number="1">{{data[5].choice1}}</p>
+                </div>
+                <div class="choice-container" (click)="next('question6',data[5].choice2);tabGroup.selectedIndex=6">
+                    <p class="choice-prefix">ب</p>
+                    <p class="choice-text" data-number="2">{{data[5].choice2}}</p>
+                </div>
+                <div class="choice-container" (click)="next('question6',data[5].choice3);tabGroup.selectedIndex=6">
+                    <p class="choice-prefix">ج</p>
+                    <p class="choice-text" data-number="3">{{data[5].choice3}}</p>
+                </div>
+                <div class="choice-container" (click)="next('question6',data[5].choice4);tabGroup.selectedIndex=6">
+                    <p class="choice-prefix">د</p>
+                    <p class="choice-text" data-number="4">{{data[5].choice4}}</p>
+                </div>
+            </mat-tab>
+            <mat-tab class=mytab label=" 7"> 
+                <h2 id="question">{{data[6].question}}</h2>
+            <div class="choice-container" (click)="next('question7',data[6].choice1);tabGroup.selectedIndex=7">
+                <p class="choice-prefix">أ</p>
+                <p class="choice-text" data-number="1">{{data[6].choice1}}</p>
+            </div>
+            <div class="choice-container" (click)="next('question7',data[6].choice2);tabGroup.selectedIndex=7">
+                <p class="choice-prefix">ب</p>
+                <p class="choice-text" data-number="2">{{data[6].choice2}}</p>
+            </div>
+            <div class="choice-container" (click)="next('question7',data[6].choice3);tabGroup.selectedIndex=7">
+                <p class="choice-prefix">ج</p>
+                <p class="choice-text" data-number="3">{{data[6].choice3}}</p>
+            </div>
+            <div class="choice-container"(click)="next('question7',data[6].choice4);tabGroup.selectedIndex=7">
+                <p class="choice-prefix">د</p>
+                <p class="choice-text" data-number="4">{{data[6].choice4}}</p>
+            </div>   
+            </mat-tab>
+            <mat-tab class=mytab label=" 8"> 
+                <h2 id="question">{{data[7].question}}</h2>
+                <div class="choice-container" (click)="next('question8',data[7].choice1);tabGroup.selectedIndex=8">
+                    <p class="choice-prefix">أ</p>
+                    <p class="choice-text" data-number="1">{{data[7].choice1}}</p>
+                </div>
+                <div class="choice-container" (click)="next('question8',data[7].choice2);tabGroup.selectedIndex=8">
+                    <p class="choice-prefix">ب</p>
+                    <p class="choice-text" data-number="2">{{data[7].choice2}}</p>
+                </div>
+                <div class="choice-container" (click)="next('question8',data[7].choice3);tabGroup.selectedIndex=8">
+                    <p class="choice-prefix">ج</p>
+                    <p class="choice-text" data-number="3">{{data[7].choice3}}</p>
+                </div>
+                <div class="choice-container" (click)="next('question8',data[7].choice4);tabGroup.selectedIndex=8">
+                    <p class="choice-prefix">د</p>
+                    <p class="choice-text" data-number="4">{{data[7].choice4}}</p>
+                </div>
+            </mat-tab>
+            <mat-tab class=mytab label=" 9">
+                <h2 id="question">{{data[8].question}}</h2>
+            <div class="choice-container" (click)="next('question9',data[8].choice1);tabGroup.selectedIndex=9">
+                <p class="choice-prefix">أ</p>
+                <p class="choice-text" data-number="1">{{data[8].choice1}}</p>
+            </div>
+            <div class="choice-container" (click)="next('question9',data[8].choice2);tabGroup.selectedIndex=9">
+                <p class="choice-prefix">ب</p>
+                <p class="choice-text" data-number="2">{{data[8].choice2}}</p>
+            </div>
+            <div class="choice-container" (click)="next('question9',data[8].choice3);tabGroup.selectedIndex=9">
+                <p class="choice-prefix">ج</p>
+                <p class="choice-text" data-number="3">{{data[8].choice3}}</p>
+            </div>
+            <div class="choice-container" (click)="next('question9',data[8].choice4);tabGroup.selectedIndex=9">
+                <p class="choice-prefix">د</p>
+                <p class="choice-text" data-number="4">{{data[8].choice4}}</p>
+            </div>   
+            </mat-tab>
+            <mat-tab class=mytab label=" 10"> 
+                <h2 id="question">{{data[9].question}}</h2>
+                <div class="choice-container" (click)="next('question10',data[9].choice1);end()">
+                    <p class="choice-prefix">أ</p>
+                    <p class="choice-text" data-number="1">{{data[9].choice1}}</p>
+                </div>
+                <div class="choice-container" (click)="next('question10',data[9].choice2);end()">
+                    <p class="choice-prefix">ب</p>
+                    <p class="choice-text" data-number="2">{{data[9].choice2}}</p>
+                </div>
+                <div class="choice-container" (click)="next('question10',data[9].choice3);end()">
+                    <p class="choice-prefix">ج</p>
+                    <p class="choice-text" data-number="3">{{data[9].choice3}}</p>
+                </div>
+                <div class="choice-container" (click)="next('question10',data[9].choice4);end()">
+                    <p class="choice-prefix">د</p>
+                    <p class="choice-text" data-number="4">{{data[9].choice4}}</p>
+                </div>
+            </mat-tab>
+          </mat-tab-group> 
+    </div>
+</div>

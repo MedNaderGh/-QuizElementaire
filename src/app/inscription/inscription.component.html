@@ -1,0 +1,27 @@
+<div id="end" class="flex-center flex-column">
+    <form class="end-form-container" [formGroup]="onRegisterForm">
+      <h2 id="end-text">هل يمكنك إدخال بياناتك الشخصية من أجل بدء الاختبار</h2>
+      <input type="text" name="name" id="username"  formControlName="fullname" placeholder="اسمك ولقبك">
+      <p ion-text class="text08" *ngIf="onRegisterForm.get('fullname').touched && onRegisterForm.get('fullname').hasError('required')">الرجاء التحقق*</p>
+      <input type="date" name="date" id="username" formControlName="date"value = "new Date().toISOString().substring(0, 10)" placeholder="تاريخ ميلادك">  
+      <p ion-text class="text08" *ngIf="onRegisterForm.get('date').touched && onRegisterForm.get('date').hasError('required')">الرجاء التحقق*</p>
+        <div class="some-class">
+          <input type="radio" class="radio" formControlName="gender"name="gender" value="Girl" id="y" />
+          <label for="y">👧</label>
+          <input type="radio" class="radio" formControlName="gender" name="gender" value="Boy" id="z" />
+          <label for="z">👦</label>
+        </div>
+        <select name="name" id="sop"  formControlName="class">
+      <option value="" disabled selected>اختر قسمك</option>
+      <option value="1">السنة الاولى</option>
+      <option value="2">السنة الثانية </option>
+      <option value="3">السنة الثالثة</option>
+      <option value="4">السنة الرابعة</option>
+      <option value="5">السنة الخامسة </option>
+      <option value="6">السنة السادسة</option>
+      </select>
+        <input type="number" name="name" id="username" formControlName="inscription" placeholder="رقم التسجيل في المدرسة">
+        <p ion-text class="text08" *ngIf="onRegisterForm.get('inscription').touched && onRegisterForm.get('inscription').hasError('required')">الرجاء التحقق*</p>
+        <button (click)="Start(onRegisterForm)"  [disabled]="!onRegisterForm.valid" class=btn>ابدأ الاختبار</button>
+    </form>
+    </div>

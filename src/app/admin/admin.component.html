@@ -1,0 +1,10 @@
+<div id="end" class="flex-center flex-column">
+    <form class="end-form-container" [formGroup]="onLoginForm">
+      <h2 id="end-text">فضاء خاص بالمعلمين</h2>
+      <input type="text" name="login" id="username"  formControlName="login" placeholder="تسجيل الدخول">
+      <p ion-text class="text08" *ngIf="onLoginForm.get('login').touched && onLoginForm.get('login').hasError('required')">الرجاء التحقق*</p>
+      <input type="password" name="password" id="username" formControlName="password" placeholder="كلمه السر">  
+      <p ion-text class="text08" *ngIf="onLoginForm.get('password').touched && onLoginForm.get('password').hasError('required')">الرجاء التحقق*</p>
+        <button (click)="Start(onLoginForm)"  [disabled]="!onLoginForm.valid" class=btn>تسجيل الدخول</button>
+    </form>
+    </div>

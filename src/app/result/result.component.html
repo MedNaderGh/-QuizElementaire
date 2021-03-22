@@ -1,0 +1,41 @@
+<div id="end" class="flex-center flex-column">
+    <DIV class="end-form-container">
+        <h2 id="end-text">الرجاء إختيار المستوى </h2>    
+    <ul>
+    <li><button class=btn-class  (click)="resultat('1')">السنة الاولى </button></li>
+    <li><button class=btn-class (click)="resultat('2')">السنة الثانية </button></li>
+    </ul>
+    <ul>
+    <li><button class=btn-class (click)="resultat('3')">السنة الثالثة</button></li>
+    <li><button class=btn-class (click)="resultat('4')">السنة الرابعة </button></li>
+    </ul>
+    <ul>
+    <li><button class=btn-class (click)="resultat('5')">السنة الخامسة </button></li>
+    <li><button class=btn-class (click)="resultat('6')">السنة السادسة </button></li>
+    </ul>
+    </DIV>
+    </div>
+    <jw-modal id="custom-modal-1">
+        <table class="darkTable">
+            <thead>
+            <tr>
+            <th>الاسم و اللقب</th>
+            <th>القسم</th>
+            <th>مستوى الامتحان</th>
+            <th>المادة</th>
+            <th>النتيجة</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr *ngFor="let data of data">
+            <td>{{data.fullname}}</td>
+            <td>{{change(data.class)}}</td>
+            <td>{{change(data.level)}}</td>
+            <td>{{change2(data.subject)}}</td>
+            <td>{{data.score}}/10</td>
+            </tr>
+            </tbody>
+            </table>
+    </jw-modal>
+    
+

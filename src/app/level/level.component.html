@@ -1,0 +1,53 @@
+<div id="end" class="flex-center flex-column">
+<DIV class="end-form-container">
+    <h2 id="end-text">الرجاء إختيار مستوى الإختبار</h2>    
+<ul>
+<li><button class=btn-class  [matMenuTriggerFor]="menu" #menuTrigger>السنة الاولى </button></li>
+<mat-menu #menu="matMenu" class="my-menu">
+    <button mat-menu-item (click)="exam(1,'math')">الرياضيات</button>
+    <button mat-menu-item (click)="exam(1,'science')">الإيقاظ العلمي</button>
+    <button mat-menu-item (click)="exam(1,'arabic')">العربية</button>
+  </mat-menu>
+<li><button class=btn-class [matMenuTriggerFor]="menu1" #menuTrigger>السنة الثانية </button></li>
+<mat-menu #menu1="matMenu" class="my-menu">
+    <button mat-menu-item (click)="exam(2,'math')">الرياضيات</button>
+    <button mat-menu-item (click)="exam(2,'science')">الإيقاظ العلمي</button>
+    <button mat-menu-item (click)="exam(2,'arabic')">العربية</button>
+  </mat-menu>
+</ul>
+<ul>
+<li><button class=btn-class [matMenuTriggerFor]="menu2" #menuTrigger>السنة الثالثة</button></li>
+<mat-menu #menu2="matMenu" class="my-menu">
+    <button mat-menu-item (click)="exam(3,'math')">الرياضيات</button>
+    <button mat-menu-item (click)="exam(3,'science')">الإيقاظ العلمي</button>
+    <button mat-menu-item (click)="exam(3,'arabic')">العربية</button>
+    <button mat-menu-item (click)="exam(3,'frensh')">الفرنسية</button>
+  </mat-menu>
+<li><button class=btn-class [matMenuTriggerFor]="menu3" #menuTrigger>السنة الرابعة </button></li>
+<mat-menu #menu3="matMenu"class="my-menu">
+    <button mat-menu-item (click)="exam(4,'math')">الرياضيات</button>
+    <button mat-menu-item (click)="exam(4,'science')">الإيقاظ العلمي</button>
+    <button mat-menu-item (click)="exam(4,'arabic')">العربية</button>
+    <button mat-menu-item (click)="exam(4,'frensh')">الفرنسية</button>
+  </mat-menu>
+</ul>
+<ul>
+<li><button class=btn-class [matMenuTriggerFor]="menu4" #menuTrigger>السنة الخامسة </button></li>
+<mat-menu #menu4="matMenu" class="my-menu">
+    <button mat-menu-item (click)="exam(5,'math')">الرياضيات</button>
+    <button mat-menu-item (click)="exam(5,'science')">الإيقاظ العلمي</button>
+    <button mat-menu-item (click)="exam(5,'arabic')">العربية</button>
+    <button mat-menu-item (click)="exam(5,'frensh')">الفرنسية</button>
+  </mat-menu>
+<li><button class=btn-class [matMenuTriggerFor]="menu5" #menuTrigger>السنة السادسة </button></li>
+<mat-menu #menu5="matMenu" class="my-menu">
+    <button mat-menu-item (click)="exam(6,'math')">الرياضيات</button>
+    <button mat-menu-item (click)="exam(6,'science')">الإيقاظ العلمي</button>
+    <button mat-menu-item (click)="exam(6,'arabic')">العربية</button>
+    <button mat-menu-item (click)="exam(6,'frensh')">الفرنسية</button>
+    <button mat-menu-item (click)="exam(6,'frensh')">الانجليزية</button>
+  </mat-menu>
+</ul>
+</DIV>
+</div>
+
