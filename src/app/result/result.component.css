@@ -196,3 +196,6 @@ table.darkTable {
   table.darkTable tfoot td {
     font-size: 12px;
   }
+  table tbody tr td {
+    font-size: 24px;
+  }

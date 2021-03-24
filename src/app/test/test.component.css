@@ -145,9 +145,10 @@ input.radio {
 .choice-container {
   display: inline-flex;
   margin-bottom: 0.8rem;
+  max-height:max-content;
   border-radius: 4px;
   background: rgb(18, 93, 255);
-  font-size: 3rem;
+  font-size: 2rem;
   width: 60rem;
 }
 
